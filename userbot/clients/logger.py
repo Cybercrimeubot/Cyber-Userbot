@@ -1,5 +1,5 @@
 # Man - UserBot
-# Copyright (c) 2022 Man-Userbot
+# Copyright (c) 2022 Cyber-Userbot
 # Credits: @mrismanaziz || https://github.com/mrismanaziz
 #
 # This file is a part of < https://github.com/mrismanaziz/Man-Userbot/ >
@@ -14,7 +14,7 @@ from userbot import CMD_HANDLER as cmd
 from userbot import MAN2, MAN3, MAN4, MAN5, bot, branch
 
 MSG_ON = """
-🔥 **Man-Userbot Berhasil Di Aktifkan**
+ **Cyber-Userbot Berhasil Di Aktifkan**
 ━━
 ➠ **Userbot Version -** `{}@{}`
 ➠ **Ketik** `{}alive` **untuk Mengecheck Bot**
@@ -22,7 +22,7 @@ MSG_ON = """
 """
 
 
-async def man_userbot_on():
+async def Cyber_userbot_on():
     try:
         if bot:
             if BOTLOG_CHATID != 0:
@@ -33,16 +33,16 @@ async def man_userbot_on():
     except BaseException:
         pass
     try:
-        if MAN2:
+        if Cyber2:
             if BOTLOG_CHATID != 0:
-                await MAN2.send_message(
+                await Cyber2.send_message(
                     BOTLOG_CHATID,
                     MSG_ON.format(version, branch, cmd),
                 )
     except BaseException:
         pass
     try:
-        if MAN3:
+        if Cyber3:
             if BOTLOG_CHATID != 0:
                 await MAN3.send_message(
                     BOTLOG_CHATID,
@@ -53,7 +53,7 @@ async def man_userbot_on():
     try:
         if MAN4:
             if BOTLOG_CHATID != 0:
-                await MAN4.send_message(
+                await Cyber4.send_message(
                     BOTLOG_CHATID,
                     MSG_ON.format(version, branch, cmd),
                 )
@@ -62,7 +62,7 @@ async def man_userbot_on():
     try:
         if MAN5:
             if BOTLOG_CHATID != 0:
-                await MAN5.send_message(
+                await Cyber5.send_message(
                     BOTLOG_CHATID,
                     MSG_ON.format(version, branch, cmd),
                 )
